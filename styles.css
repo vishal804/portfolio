@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --background-light-gray: #f9fafb;
+  --background-medium-gray: #e5e7eb;
+  --secondary: #4b5563;
+  --text-color: #222222;
+  --primary-color: #d1d5db;
+  --Secondary-color: #ebebeb;
+
+  --medium-gray: #f2f2f2;
+  --primary: #181818;
+  --border: #ced4da;
+  --dark: #181818;
+  --text-colortwo: #1f2937;
+
+  --border: #ced4da;
+}
+/* common styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: var(--background-medium-gray);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Naviation Bar  */
+.navigation {
+  background-color: var(--dark);
+  color: var(--medium-gray);
+  padding: 0.8rem 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.nav-div {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+/* Naviation Bar: logo  */
+.nav-logo {
+  flex: 1;
+  padding-left: 0;
+  padding: 0 0 0 2rem;
+}
+
+/* Naviation Bar: List Sytling */
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation ul li {
+  font-size: 1rem;
+  padding: 0 0 0 2rem;
+}
+
+.navigation ul li a {
+  color: var(--medium-gray);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.active {
+  text-transform: uppercase;
+  color: var(--text-colortwo);
+}
+.navigation ul li a:hover {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 34.37rem) and (min-width: 0rem) {
+  .nav-collection {
+    flex-flow: column wrap;
+  }
+}
+
+/* section of heading */
+.section {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .section {
+    display: block;
+  }
+}
+.coloum {
+  flex: 50%;
+  height: 496px;
+}
+
+.data {
+  margin: 2rem;
+  padding-top: 4rem;
+}
+/* Image Sizing */
+.img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.text-h4 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--secondary);
+}
+
+.text-h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 0.6rem 0;
+  color: var(--textColor);
+  margin: 0;
+}
+
+/* section of about */
+.about-section {
+  margin: 5rem 0;
+  padding: 2rem 0;
+}
+
+.about-div {
+  max-width: 600px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2.1rem;
+}
+
+.paragraph {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Projects */
+
+.work-outerspace {
+  box-sizing: border-box;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: var(--border);
+}
+
+.work-space {
+  border-radius: 0.3rem;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-card {
+  width: 45%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--dark);
+}
+
+@media (max-width: 500px) {
+  .work-card {
+    width: 100%;
+  }
+}
+
+.work-info {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.work-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.work-btn {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-size: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.work-viewbtn {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-viewbtn a {
+  text-decoration: none;
+}
+
+/* footer */
+.title1 {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.footer {
+  background-color: var(--dark);
+  color: var(--medium-gray);
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.footer-li {
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.rights {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.rights p {
+  margin: auto;
+  padding: 0.2rem;
+}
+
+.footer-ul a {
+  color: var(--border);
+}
+
+/* Blog Template  */
+
+.button {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #eff1ff;
+}

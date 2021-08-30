@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <link rel="stylesheet" href="blogstyles.css" />
+</head>
+<body>
+    
+    <header class="blog-heading-section">
+        <h1 class="blog-heading-section">Git and Basic Git Commands for Beginner</h1>
+        
+        <div>
+            <a class="button-heading" href="/blogs.html">Back</a>
+            <a class="button-heading" target="blank" href="/index.html">Home</a>
+            <hr >
+        </div>
+    </header>
+
+    <section class="hero">
+        <img class="blog-img" src="git.png" alt="Image will appear shortly">
+    </section>
+
+
+    <div class = "container ow container-center " style="padding-top: 0.5rem;">    
+         <div>
+                <!-- <small class = "blog-meta">22 August</small> -->
+                <p>
+                    <h3>What is a <span class="highlight">Git</span> ? </h3>  <br>
+                    Git is a very popular among developers Git is a distributed version control system for tracking file changes  git helps us to work with multiple people, on the same file on the same time, which is a superpower when it comes to developing something, It allows you to create your own working copy of project on your local machine and allows you to make it remote so other team member can read and update it. <br>
+                    <br>
+                    In this blog, will discuss the basic Git workflow and basic CLI commands of git for a beginner to start with. Let's jump right in.
+                </p>
+                <br>
+    
+            </div>
+    </div>
+    <br>
+    <div class="container container-center ">
+        <p> <h3>Basic Idea of <span class="highlight"> Git Workfolw </span></h3>
+            <br>
+            Git Is a  <span class="highlight">version control</span>  It is a software use to track the local file. Gitlab and Github are Remote code repository where all other developer push there git initiallized local repo And with the help of github and gitlab developers can work collaboratively.
+            
+            <br><br>
+            Git basically work on 3 stages first step is working stage where we can locally modified our codes, after that we use add command so our code goes from working area to stagging area From stagging area we do final commit, which is the last step and it puts a snapshot of whatever was there in the staging area as a permanent commit/version.<br> Hence the name Version Control, Then obviously we can do push command to push all our commits into the remote repo present in GitHub or GitLab.  .</p>
+    </div>
+
+   
+
+    <section class="blog-cmd-section container container-center">
+
+        <h2 class="blog-subheading">Basic Git Commands</h2>
+        <p class="blog-paragraph">Following are some basic CLI git commands to get started as beginner</p>
+
+        <div class="blog-command">
+            <h3>1) Git init -</h3>
+            <p class="blog-cmd-description">This command is used to initialized an empty git repository in the current directory.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git init</h5>
+            </div>
+        </div>
+
+
+        <div class="blog-command">
+            <h3>2) Git Status -</h3>
+            <p class="blog-cmd-description">This command gives the status of files changed and those which still need to add or commit as untracked, modified, or staged.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git status</h5>
+            </div>
+        </div>
+
+
+        <div class="blog-command">
+            <h3>3) Git Add - </h3>
+            <p class="blog-cmd-description">Using this command you can add your code changes to staging area, you can add more than one file at same time</p>
+            <div class="blog-cmd-syntax">
+            <h5 style="margin-bottom: 0;" >$ git add <filename></h5>
+                <p style="margin-top: 0;" >#to add a one file</p>
+             <h5 style="margin-bottom: 0;">$ git add .</h5>
+             <p style="margin-top: 0;"> #to add all untracked files together into the staging area</p>   
+            </div>
+        </div>
+
+
+        <div class="blog-command">
+            <h3>4) Git Commit - </h3>
+            <p class="blog-cmd-description">This command is used to commit changes with comments locally not to the remote repository. This will take files from staging area and saves the snapshot to the project history and completes the change-tracking process.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git commit -m "message"</h5>
+            </div>
+        </div>
+
+
+        <div class="blog-command">
+            <h3>5) Git log - </h3>
+            <p class="blog-cmd-description">This command lists all the previous commits with details such as commit id , commit message, and date.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git log</h5>
+            </div>
+        </div>
+
+        <div class="blog-command">
+            <h3>6) Git Branch - </h3>
+            <p class="blog-cmd-description">This command is used to work with the branches. We can create different branches to work on a feature and merge it later with the main branch.</p>
+            <div class="blog-cmd-syntax">
+            <h5 style="margin-bottom: 0;"> $ git branch</h5>
+            <p style="margin-top: 0;" >#gives list all the branches </p>
+            <h5 style="margin-bottom: 0;"> $ git branch [branch-name] </h5>
+            <p style="margin-top: 0;">#To create new branch </p>
+            </div>
+        </div>
+
+       
+        <div class="blog-command">
+            <h3>7) Git Checkout - </h3>
+            <p class="blog-cmd-description">This command is used to switch between different created branches in repository.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git checkout [branch-name]</h5>
+            </div>
+        </div>
+
+
+
+        <div class="blog-command">
+            <h3>8) Git Clone - </h3>
+            <p class="blog-cmd-description">This command is used to to clone remote repository into local machine. This includes all the project’s files, history, and branches.</p>
+            <div class="blog-cmd-syntax">
+            <h5>$ git clone [remote url]<branch-name></h5>
+            </div>
+        </div>
+
+       
+
+
+        <div class="blog-command">
+            <h3>9) Git Push -  </h3>
+            <p class="blog-cmd-description"> This command is used to Push the changes to the remote repository.</p>
+            <div class="blog-cmd-syntax">
+            <h5 style="margin-bottom: 0;">  $ git push origin master  <branch-name></h5>
+                <p>#push all changes in the master branch from local to remote repository</p>
+            <h5 style="margin-bottom: 0;">   $ git push origin [branch-name]  <branch-name></h5>
+                <p style="margin-top: 0;">#push all changes in the a specific branch to remote repository</p>
+            </div>
+        </div>
+
+        <div class="blog-command">
+            <h3>10) Git Pull - </h3>
+            <p class="blog-cmd-description"> This command is used to fetch content from a remote repository to the local working directory.</p>
+            <div class="blog-cmd-syntax">
+            <h5> $ git pull<branch-name></h5>
+            </div>
+        </div>
+
+
+
+        <div class="blog-command">
+            <h3>11) Git Merge - </h3>
+            <p class="blog-cmd-description"> This command is used to merge a different branch into your working branch or to master/main branch.</p>
+            <div class="blog-cmd-syntax">
+            <h5> $ git merge [branch-name]<branch-name></h5>
+            </div>
+        </div>
+
+        <div class="blog-command">
+            <h3>12) Git Diff -  </h3>
+            <p class="blog-cmd-description"> This command is used to Show difference between previous changes and new changes.</p>
+            <div class="blog-cmd-syntax">
+            <h5> $ git diff<branch-name></h5>
+            </div>
+        </div>
+
+
+        </section>
+        <hr>
+        <div class="thank-section">
+            <h3 style="text-align: center;">Thank You</h3>
+
+            <a class="button" href="/blogs.html">Back</a>
+        </div>
+
+</body>
+</html>
